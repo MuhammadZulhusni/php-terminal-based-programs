@@ -30,11 +30,12 @@ To run the programs in this repository, you'll need:
    ```bash
    cd php-programs
 
-3. Place the PHP files in your local server's htdocs directory (for XAMPP) or equivalent.
-
-4. Open your browser and run the programs by navigating to:
+3. Run the PHP script using PHP CLI:
+   - For each PHP program, run it in the terminal.
+   - Replace your-program-file.php with the actual PHP file name (e.g., atm.php).
    ```bash
-   http://localhost/php-programs/your-program-file.php
+   php your-program-file.php
+   ```
 
 ## Contributing
 
