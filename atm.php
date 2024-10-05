@@ -1,10 +1,9 @@
 <?php 
 
-// --------------------------------------------------------------------------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------------------------------------------------
 // Step 1 - Intial setup
 
 $balance = 2000;
-
 // while (true): This creates an infinite loop, meaning the menu will keep displaying until the user chooses to exit the program.
 while(true) {
     // Display ATM menu to user
@@ -22,8 +21,47 @@ while(true) {
     $choice = trim(fgets(STDIN));
     // fgets(STDIN): Reads user input from the terminal (CLI). 
     // The trim() function is used to remove any extra spaces or newline characters from the input.
-// --------------------------------------------------------------------------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------------------------------------------------
 
+// Step 2: ATM Functionalities
+switch ($choice) {
+    case 1:
+        echo "\nYour current balance is: RM" . $balance . "\n";
+        break;
+        
+    case 2:
+        echo "\nEnter the amount to deposit: RM";
+        $deposit = trim(fgets(STDIN));
+        if (is_numeric($deposit) && $deposit > 0) {
+            $balance += $deposit;
+            echo "Successfully deposited RM" . $deposit . ". Your new balance is RM" . $balance . "\n";
+        } else {
+            echo "Invalid amount. Please enter a positive number.\n";
+        }
+        break;
+        
+    case 3:
+        echo "\nEnter the amount to withdraw: RM";
+        $withdraw = trim(fgets(STDIN));
+        if (is_numeric($withdraw) && $withdraw > 0) {
+            if ($withdraw <= $balance) {
+                $balance -= $withdraw;
+                echo "Successfully withdrew RM" . $withdraw . ". Your new balance is RM" . $balance . "\n";
+            } else {
+                echo "Insufficient balance! You have only RM" . $balance . "\n";
+            }
+        } else {
+            echo "Invalid amount. Please enter a positive number.\n";
+        }
+        break;
+        
+    case 4:
+        echo "Thank you for using our ATM! Goodbye.\n";
+        exit();
+    
+    default:
+        echo "Invalid choice. Please choose a valid option (1-4).\n";
+}
 }
 
 ?>
