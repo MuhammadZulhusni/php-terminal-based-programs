@@ -62,6 +62,10 @@ switch ($choice) {
     default:
         echo "Invalid choice. Please choose a valid option (1-4).\n";
 }
+// -----------------------------------------------------------------------------------------------------------------------------
+// Step 3: Loop and Exit
+// The while (true) loop ensures the ATM menu keeps displaying after each transaction until the user selects 4 to exit.
+// When case 4 is selected, the loop breaks with the exit() function, ending the program.
 }
 
 ?>
