@@ -9,4 +9,10 @@ function subtract($a, $b) {
     return $a - $b;
 }
 
+// Function to perform multiplication
+function multiply($a, $b) {
+    return $a * $b;
+}
+
+
 ?>
