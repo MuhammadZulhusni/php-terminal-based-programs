@@ -38,4 +38,9 @@ while (true) {
         echo "Exiting the calculator. Goodbye!\n";
         break;
     }
+    
+    // Get the first number
+    echo "Enter the first number: ";
+    $num1 = trim(fgets(STDIN));
+        
 ?>
