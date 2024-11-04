@@ -42,5 +42,12 @@ while (true) {
     // Get the first number
     echo "Enter the first number: ";
     $num1 = trim(fgets(STDIN));
+
+     // Validate first number
+     if (!is_numeric($num1)) {
+        echo "Invalid input. Please enter a valid number.\n";
+        continue;
+    }
+    
         
 ?>
