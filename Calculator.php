@@ -43,11 +43,20 @@ while (true) {
     echo "Enter the first number: ";
     $num1 = trim(fgets(STDIN));
 
-     // Validate first number
-     if (!is_numeric($num1)) {
+    // Validate first number
+    if (!is_numeric($num1)) {
         echo "Invalid input. Please enter a valid number.\n";
         continue;
     }
     
+    // Get the second number
+    echo "Enter the second number: ";
+    $num2 = trim(fgets(STDIN));
+
+    // Validate second number
+    if (!is_numeric($num2)) {
+        echo "Invalid input. Please enter a valid number.\n";
+        continue;
+    }
         
 ?>
