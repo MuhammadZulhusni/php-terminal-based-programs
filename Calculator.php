@@ -59,4 +59,26 @@ while (true) {
         continue;
     }
         
+    // Convert input to numbers
+    $num1 = (float)$num1;
+    $num2 = (float)$num2;
+
+    // Perform the chosen operation
+    switch ($choice) {
+        case 1:
+            echo "Result: " . add($num1, $num2) . "\n";
+            break;
+        case 2:
+            echo "Result: " . subtract($num1, $num2) . "\n";
+            break;
+        case 3:
+            echo "Result: " . multiply($num1, $num2) . "\n";
+            break;
+        case 4:
+            echo "Result: " . divide($num1, $num2) . "\n";
+            break;
+        default:
+            echo "Invalid option. Please choose between 1-5.\n";
+    }
+}
 ?>
