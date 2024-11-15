@@ -5,6 +5,10 @@ function celsiusToFahrenheit($celsius) {
 }
 
 
+// Function to convert Celsius to Kelvin
+function celsiusToKelvin($celsius) {
+    return $celsius + 273.15;
+}
 
 
 
