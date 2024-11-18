@@ -10,7 +10,10 @@ function celsiusToKelvin($celsius) {
     return $celsius + 273.15;
 }
 
-
+// Function to convert Fahrenheit to Celsius
+function fahrenheitToCelsius($fahrenheit) {
+    return ($fahrenheit - 32) * 5/9;
+}
 
 
 ?>
