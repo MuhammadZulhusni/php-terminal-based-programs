@@ -29,4 +29,10 @@ function kelvinToFahrenheit($kelvin) {
     return ($kelvin - 273.15) * 9/5 + 32;
 }
 
+// Function to convert Kelvin to Fahrenheit
+function kelvinToFahrenheit($kelvin) {
+    return ($kelvin - 273.15) * 9/5 + 32;
+}
+
+
 ?>
