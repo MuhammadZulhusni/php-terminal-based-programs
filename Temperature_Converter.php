@@ -53,5 +53,17 @@ while (true) {
         echo "Invalid input. Please enter a valid number.\n";
         continue;
     }
+
+    $temperature = (float)$temperature;
+
+    // Perform conversions based on user choice
+    switch ($choice) {
+        case 1:
+            $fahrenheit = celsiusToFahrenheit($temperature);
+            $kelvin = celsiusToKelvin($temperature);
+            echo "$temperature °C is equal to $fahrenheit °F and $kelvin K\n";
+            break;
+
+        }
     
 ?>
