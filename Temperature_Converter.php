@@ -64,6 +64,12 @@ while (true) {
             echo "$temperature °C is equal to $fahrenheit °F and $kelvin K\n";
             break;
 
+            case 2:
+                $celsius = fahrenheitToCelsius($temperature);
+                $kelvin = fahrenheitToKelvin($temperature);
+                echo "$temperature °F is equal to $celsius °C and $kelvin K\n";
+                break;
+
         }
     
 ?>
